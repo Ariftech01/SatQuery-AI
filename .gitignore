@@ -1,10 +1,15 @@
-# Python
+# Python Virtual Environments & Packages
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
 env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
 build/
 develop-eggs/
 dist/
@@ -21,20 +26,40 @@ wheels/
 .installed.cfg
 *.egg
 .pytest_cache/
+.coverage
+htmlcov/
 
-# Node
+# Node & Frontend Build
 node_modules/
 .npm
 dist/
+frontend/dist/
 dist-ssr/
 *.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Editor
+# Environment & Secrets (Never commit secrets!)
+.env
+.env.*
+!.env.example
+
+# IDE & Editor Settings
 .vscode/
 .idea/
 *.swp
 *.swo
+*.sublime-project
+*.sublime-workspace
 
-# Environment
-.env
-.env.local
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs & Temporary Files
+*.log
+scratch/
